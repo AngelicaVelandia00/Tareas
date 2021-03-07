@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!--Estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Estilos css-->
+  <link rel="stylesheet" href="./Style/style.css">
+
+    <!-- titulos -->
+    <title> Bar Angeles Caidos </title>
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="./Style/style.css">
+
+    <!-- icon Image -->
+    <link rel="icon" type="image/png" href="./img/alas.png">
+
+  </head>
+  <body>
+  
+  <!--Barra de Navegacion-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-nav">
+    <a class="navbar-brand" href="./index.html"></a>
+    <nav class="navbar navbar-inverse bg-inverse">
+      <a class="navbar-brand" href="./index.html">
+        <img class="icon" src="./img/alas.png" width="70" height="70" padding="15px">Bar Angeles Caidos
+      </a>
+    </nav>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#option" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="option" class="collapse navbar-collapse">
+      <div class="navbar-nav ml-auto">
+        <a href="" class="nav-item nav-link ">Inicio </a>
+        <a href="" class="nav-item nav-link ">Eventos</a>
+        <a href="./index.html" class="nav-item nav-link active">Inscripcion</a>
+      </div>
+    </div>
+  </nav>
+ <!-- Barra de navegacion final -->
+
+  <!-- Carrusel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./img/depositphotos_104945008-stock-photo-people-dancing-at-party.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/depositphotos_105632782-stock-photo-friends-with-smartphone-taking-selfie.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/depositphotos_25565783-stock-photo-young-party-people.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <section class="form-section">
+    <div class="form-container">
+      <header class="header-form">
+        <h2>Por favor completa el siguiente formulario</h2>
+      </header>            
+    <div class="input-table">
+      <!-- Name Data -->
+      <div class="names-container">
+        <label for="name" class="form-label">Nombres</label>
+        <input type="text" class="form-input" id="name" placeholder="Nombres">
+      </div>
+      <div class="names-container">
+        <label for="last-name" class="form-label">Apellidos</label>
+        <input type="text" class="form-input" id="last-name" placeholder="Apellidos">
+      </div>
+      <div class="names-container">
+        <label class="" for="inlineFormCustomSelectPref">Tipo de Documento</label>
+        <select class="custom-select"id="inlineFormCustomSelectPref">
+        <option selected>Escoger...</option>
+        <option value="1">Tarjeta de Identidad</option>
+        <option value="2">Cedula de Ciudadania</option>
+        </select>
+      </div>
+      <div class="names-container">
+        <label for="documento" class="form-label">Nº Documento</label>
+        <input type="number" class="form-input" id="last-name" placeholder="Nº Documento">
+      </div>
+    <!-- Contact data -->
+      <div class="contact-container">
+        <label for="Edad" class="form-label">Edad</label>
+        <input type="number" class="form-input" id="Edad" placeholder="Edad">
+      </div>
+      <div class="contact-container">
+        <label for="email" class="form-label">E-Mail</label>
+        <input type="email" class="form-input" id="email" placeholder="email">
+      </div>  
+      <div class="contact-container">
+        <label for="Telefono" class="form-label">Telefono</label>
+        <input type="number" class="form-input" id="Telefono" placeholder="Telefono">
+      </div>  
+      <div class="contact-container">
+        <label for="Acompañantes" class="form-label">Nº Acompañantes</label>
+        <input type="number" class="form-input" id="Acompañantes" placeholder="Acompañantes">
+      </div> 
+      <div class="custom-control custom-checkbox" class="card m-4" style="width: 18rem;">
+        <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+        <label class="custom-control-label" for="customCheckDisabled">Marque si es Mujer</label>
+      </div>
+      
+      <div class="custom-control custom-radio" class="card m-4" style="width: 18rem;">
+        <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+        <label class="custom-control-label" for="customRadioDisabled">Marque si es Hombre</label>
+      </div>
+      <div class="buttons-container">
+        <a href="#Cancelar" class="send-button">Enviar</a>
+        <a href="#cancelar" class="cancel-button">Cancelar</a>
+      </div>
+      </div>
+      </div>
+      </section>
+    
+        
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
